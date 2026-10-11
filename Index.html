@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnaza Island Cebu Trip Booking Form</title>
+</head>
+
+<body bgcolor="lightcyan">
+
+    <h1 align="center">
+        <font color="darkblue">CARNAZA ISLAND CEBU TRIP BOOKING FORM</font>
+    </h1>
+
+    <p align="center">
+        Plan your exciting adventure to Carnaza Island, Cebu!
+        Choose your favorite tourist spot and prepare for your trip.
+    </p>
+
+    <hr>
+
+    <form id="bookingForm">
+
+        <!-- 1. PERSONAL INFORMATION -->
+        <div>
+            <h2><font color="darkblue">1. Personal Information</font></h2>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="nickname">Nickname:</label><br>
+            <input type="text" id="nickname" name="nickname"
+                   placeholder="Enter your nickname">
+            <br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required>
+            <br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"
+                   min="1" placeholder="Enter your age" required>
+            <br><br>
+
+            <label for="password">Create Password:</label><br>
+            <input type="password" id="password" name="password"
+                   placeholder="Create a password" required>
+            <br><br>
+        </div>
+
+        <hr>
+
+        <!-- 2. TRIP INFORMATION -->
+        <div>
+            <h2><font color="darkblue">2. Trip Information</font></h2>
+
+            <label for="destination">Choose Your Destination:</label><br>
+            <select id="destination" name="destination" required>
+                <option value="">-- Select a Tourist Spot --</option>
+                <option value="Gato Island">Gato Island</option>
+                <option value="Lamanok">Lamanok</option>
+                <option value="Eco Park">Eco Park</option>
+                <option value="Twin Beach">Twin Beach</option>
+                <option value="Maria Maria">Maria Maria</option>
+            </select>
+            <br><br>
+
+            <label for="activity">Choose Your Activity:</label><br>
+            <select id="activity" name="activity" required>
+                <option value="">-- Select an Activity --</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Island Hopping">Island Hopping</option>
+                <option value="Snorkeling">Snorkeling</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Photography">Photography</option>
+            </select>
+            <br><br>
+
+            <label for="date">Travel Date:</label><br>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="travelers">Number of Travelers:</label><br>
+            <input type="number" id="travelers" name="travelers"
+                   min="1" max="20"
+                   placeholder="Enter number of travelers" required>
+            <br><br>
+
+            <label for="transportation">Transportation:</label><br>
+            <select id="transportation" name="transportation" required>
+                <option value="">-- Select Transportation --</option>
+                <option value="Bus">Bus</option>
+                <option value="Van">Van</option>
+                <option value="Private Car">Private Car</option>
+                <option value="Motorcycle">Motorcycle</option>
+                <option value="Boat">Boat</option>
+            </select>
+            <br><br>
+
+            <label for="budget">Budget per Person (₱):</label><br>
+            <input type="number" id="budget" name="budget"
+                   min="0" placeholder="Enter your budget" required>
+            <br><br>
+        </div>
+
+        <hr>
+
+        <!-- 3. FOOD AND SPECIAL REQUESTS -->
+        <div>
+            <h2><font color="darkblue">3. Food and Special Requests</font></h2>
+
+            <label for="food">Preferred Food:</label><br>
+            <select id="food" name="food" required>
+                <option value="">-- Choose Your Preferred Food --</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Grilled Fish">Grilled Fish</option>
+                <option value="Grilled Chicken">Grilled Chicken</option>
+                <option value="Pork BBQ">Pork BBQ</option>
+                <option value="Filipino Dishes">Filipino Dishes</option>
+                <option value="Vegetarian Food">Vegetarian Food</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="No Food Preference">No Food Preference</option>
+            </select>
+            <br><br>
+
+            <label for="requests">Special Requests:</label><br>
+            <textarea id="requests" name="requests" rows="4" cols="35"
+                      placeholder="Write your special requests here"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">
+                I confirm that the information I entered is correct.
+            </label>
+            <br><br>
+
+            <button type="submit">Submit Booking</button>
+            <button type="reset">Reset Form</button>
+        </div>
+
+    </form>
+
+    <hr>
+
+    <!-- 4. CARNAZA ISLAND TOURIST GUIDE -->
+    <div>
+        <h2><font color="darkblue">4. Carnaza Island Tourist Guide</font></h2>
+
+        <p>
+            Explore these tourist spots when planning your Carnaza Island adventure.
+        </p>
+
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+
+            <tr bgcolor="lightblue">
+                <th>Tourist Spot</th>
+                <th>Popular Activity</th>
+                <th>Estimated Budget</th>
+                <th>Suggested Duration</th>
+            </tr>
+
+            <tr>
+                <td>Gato Island</td>
+                <td>Snorkeling and Diving</td>
+                <td>₱500–₱1,500</td>
+                <td>Half Day</td>
+            </tr>
+
+            <tr>
+                <td>Lamanok</td>
+                <td>Island Exploration</td>
+                <td>₱500–₱1,500</td>
+                <td>Half Day</td>
+            </tr>
+
+            <tr>
+                <td>Eco Park</td>
+                <td>Nature Exploration</td>
+                <td>₱300–₱800</td>
+                <td>Half Day</td>
+            </tr>
+
+            <tr>
+                <td>Twin Beach</td>
+                <td>Swimming and Relaxation</td>
+                <td>₱300–₱800</td>
+                <td>Half Day</td>
+            </tr>
+
+            <tr>
+                <td>Maria Maria</td>
+                <td>Sightseeing and Photography</td>
+                <td>₱300–₱800</td>
+                <td>Half Day</td>
+            </tr>
+
+        </table>
+
+        <p>
+            <small>
+                Note: Budget amounts are examples for this school project.
+                Actual fees and travel costs may vary.
+            </small>
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- 5. CONTACT INFORMATION -->
+    <div>
+        <h2><font color="darkblue">5. Contact Information</font></h2>
+
+        <p>For questions about your trip, contact us through email or phone.</p>
+
+        <p>
+            Email:
+            <a href="mailto:carnazatrip@example.com">
+                carnazatrip@example.com
+            </a>
+        </p>
+
+        <p>
+            Phone Number:
+            <a href="tel:+639123456789">+63 912 345 6789</a>
+        </p>
+
+        <p>Thank you for choosing Carnaza Island, Cebu!</p>
+    </div>
+
+    <hr>
+
+    <!-- BOOKING CONFIRMATION -->
+    <div id="confirmation" hidden>
+        <h2><font color="green">Booking Confirmation</font></h2>
+
+        <p>Your booking information has been submitted successfully!</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr bgcolor="lightgreen">
+                <th>Information</th>
+                <th>Your Answer</th>
+            </tr>
+
+            <tr><td>Full Name</td><td id="resultName"></td></tr>
+            <tr><td>Nickname</td><td id="resultNickname"></td></tr>
+            <tr><td>Email Address</td><td id="resultEmail"></td></tr>
+            <tr><td>Age</td><td id="resultAge"></td></tr>
+            <tr><td>Tourist Spot</td><td id="resultDestination"></td></tr>
+            <tr><td>Activity</td><td id="resultActivity"></td></tr>
+            <tr><td>Travel Date</td><td id="resultDate"></td></tr>
+            <tr><td>Number of Travelers</td><td id="resultTravelers"></td></tr>
+            <tr><td>Transportation</td><td id="resultTransportation"></td></tr>
+            <tr><td>Budget per Person</td><td id="resultBudget"></td></tr>
+            <tr><td>Preferred Food</td><td id="resultFood"></td></tr>
+            <tr><td>Special Requests</td><td id="resultRequests"></td></tr>
+        </table>
+    </div>
+
+    <script>
+        var form = document.getElementById("bookingForm");
+        var confirmation = document.getElementById("confirmation");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("resultName").textContent =
+                document.getElementById("fullname").value;
+
+            document.getElementById("resultNickname").textContent =
+                document.getElementById("nickname").value || "Not provided";
+
+            document.getElementById("resultEmail").textContent =
+                document.getElementById("email").value;
+
+            document.getElementById("resultAge").textContent =
+                document.getElementById("age").value;
+
+            document.getElementById("resultDestination").textContent =
+                document.getElementById("destination").value;
+
+            document.getElementById("resultActivity").textContent =
+                document.getElementById("activity").value;
+
+            document.getElementById("resultDate").textContent =
+                document.getElementById("date").value;
+
+            document.getElementById("resultTravelers").textContent =
+                document.getElementById("travelers").value;
+
+            document.getElementById("resultTransportation").textContent =
+                document.getElementById("transportation").value;
+
+            document.getElementById("resultBudget").textContent =
+                "₱" + document.getElementById("budget").value;
+
+            document.getElementById("resultFood").textContent =
+                document.getElementById("food").value;
+
+            document.getElementById("resultRequests").textContent =
+                document.getElementById("requests").value || "None";
+
+            confirmation.hidden = false;
+            confirmation.scrollIntoView({ behavior: "smooth" });
+        });
+
+        form.addEventListener("reset", function() {
+            confirmation.hidden = true;
+        });
+    </script>
+
+</body>
+</html>
